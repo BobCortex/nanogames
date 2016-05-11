@@ -220,7 +220,7 @@ namespace NanoGames.Network
                 _writer.Dispose();
                 _reader.Dispose();
                 _stream.Dispose();
-                _tcpClient.Dispose();
+                ((IDisposable)_tcpClient).Dispose();
             }
 
             private void OnPacket(byte[] packet)

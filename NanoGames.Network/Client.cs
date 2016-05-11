@@ -1,6 +1,7 @@
 ﻿// Copyright (c) the authors of nanoGames. All rights reserved.
 // Licensed under the MIT license. See LICENSE.txt in the project root.
 
+using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
@@ -50,7 +51,7 @@ namespace NanoGames.Network
                 _writer.Dispose();
                 _reader.Dispose();
                 _stream.Dispose();
-                _tcpClient.Dispose();
+                ((IDisposable)_tcpClient).Dispose();
             }
 
             base.Dispose(isDisposing);

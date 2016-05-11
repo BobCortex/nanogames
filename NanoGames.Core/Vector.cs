@@ -122,7 +122,7 @@ namespace NanoGames
         /// <inheritdoc/>
         public override string ToString()
         {
-            return FormattableString.Invariant($"({X}, {Y})");
+            return string.Format("({0}, {1})", X, Y);
         }
     }
 }
