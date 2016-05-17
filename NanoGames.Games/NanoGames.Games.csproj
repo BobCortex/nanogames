@@ -68,6 +68,8 @@
     <Compile Include="Match.cs" />
     <Compile Include="MatchDescription.cs" />
     <Compile Include="Match{TPlayer}.cs" />
+    <Compile Include="NortRacing\NortRacingMatch.cs" />
+    <Compile Include="NortRacing\NortRacingPlayer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerDescription.cs" />
     <Compile Include="Player{TMatch}.cs" />
@@ -79,6 +81,7 @@
       <Name>NanoGames.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
